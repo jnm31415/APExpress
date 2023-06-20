@@ -127,7 +127,7 @@ def ua10na_pos(request,pk):
 def ua11aa(request):
   all_auf = Auftrag.objects.order_by('-auftragsnummer_ID')
   context = {'all_auf':all_auf}
-  return render(request, 'Aufträge/ua11aa.html', context)
+  return render(request, 'Aufträge/UA11AA.html', context)
 
 @login_required(login_url='login')
 def ua12as(request):
@@ -155,7 +155,7 @@ def ua21ra(request):
   all_rg = Rechnung.objects.order_by('-rechnungsnummer')
   all_pos = Auftragspositionen.objects.all()
   context = {'all_rg':all_rg, 'all_pos':all_pos}
-  return render(request, 'Aufträge/ua21ra.html', context)
+  return render(request, 'Aufträge/UA21RA.html', context)
 
 @login_required(login_url='login')
 def position(request,pk):
