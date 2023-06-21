@@ -18,12 +18,8 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
-x=[]
-for i in range len(admin.site.urls):
-    x = x + admin.site.urls[i].replace("%25C3%25A4","ä")
-
 urlpatterns = [
-    path('admin/', x),
+    path('admin/', admin.site.urls),
     path('', include('Aufträge.urls'))
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
