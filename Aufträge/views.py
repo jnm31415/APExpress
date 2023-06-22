@@ -273,7 +273,7 @@ def invoice(request,pk):
         w, h = table.wrap(doc.width, doc.bottomMargin)
         table.drawOn(canvas, doc.leftMargin+0.5*cm,h-1.2*cm)
         
-      data2 = [['Gesamtpreis:',str(total_price)+'€'],['inkl. MwSt:',str(mw)+'€']]
+      data2 = [['Gesamtpreis:',str(total_price)+'€'],['inkl. MwSt:',str(round(mw,2))+'€']]
       table2 = Table(data2)
       table2.hAlign = 'RIGHT'
       table2.setStyle([('ALIGN', (0, 0),(0, -1), 'LEFT'),
