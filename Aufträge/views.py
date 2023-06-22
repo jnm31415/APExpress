@@ -224,7 +224,7 @@ def invoice(request,pk):
       
 
       rtext = Paragraph(rg.rechnungstext)
-      im = Image(static('LogoAP.jpg'),4*cm,2*cm,hAlign='RIGHT')
+      im = Image(static('media/LogoAP.jpg'),4*cm,2*cm,hAlign='RIGHT')
       def myFirstPage(canvas, doc):
         #Draws the invoice header
         canvas.setStrokeColorRGB(0.13, 0.25, 0.27)
@@ -357,7 +357,7 @@ def pod(request,pk):
                             ('BACKGROUND',(0,1),(-1,-1),colors.white),
                             ('GRID',(0,0),(-1,-1),1,colors.black)]))
       
-      im = Image(static('LogoAP.jpg'),4*cm,2*cm,hAlign='RIGHT')
+      im = Image(static('media/LogoAP.jpg'),4*cm,2*cm,hAlign='RIGHT')
       def myFirstPage(canvas, doc):
         #Draws the invoice header
         canvas.setStrokeColorRGB(0.13, 0.25, 0.27)
