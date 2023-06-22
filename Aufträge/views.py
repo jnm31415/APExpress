@@ -24,6 +24,8 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Tabl
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
 import time
+from django.templatetags.static import static
+
 
 
 
@@ -222,7 +224,7 @@ def invoice(request,pk):
       
 
       rtext = Paragraph(rg.rechnungstext)
-      im = Image('\static\media\LogoAP.jpg',4*cm,2*cm,hAlign='RIGHT')
+      im = Image(static('LogoAP.jpg'),4*cm,2*cm,hAlign='RIGHT')
       def myFirstPage(canvas, doc):
         #Draws the invoice header
         canvas.setStrokeColorRGB(0.13, 0.25, 0.27)
@@ -355,7 +357,7 @@ def pod(request,pk):
                             ('BACKGROUND',(0,1),(-1,-1),colors.white),
                             ('GRID',(0,0),(-1,-1),1,colors.black)]))
       
-      im = Image('\media\LogoAP.jpg',4*cm,2*cm,hAlign='RIGHT')
+      im = Image(static('LogoAP.jpg'),4*cm,2*cm,hAlign='RIGHT')
       def myFirstPage(canvas, doc):
         #Draws the invoice header
         canvas.setStrokeColorRGB(0.13, 0.25, 0.27)
