@@ -317,7 +317,7 @@ def invoice(request,pk):
 def pod(request,pk):
   a = Auftrag.objects.get(auftragsnummer_ID = pk)
   pos = Auftragspositionen.objects.filter(auftragsnummer=pk)
-  rg = Rechnung.objects.get(auftragsnummer=pk)
+  #rg = Rechnung.objects.get(auftragsnummer=pk)
   
 
 
