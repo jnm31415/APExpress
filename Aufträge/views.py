@@ -216,7 +216,7 @@ def invoice(request,pk):
                             ('ALIGN',(0,0),(-1,-1),'CENTER'),
                             ('ALIGN',(1,1),(1,-1),'LEFT'),
                             ('VALIGN',(0,0),(-1,-1),'MIDDLE'),
-                            ('FONTNAME',(0,0),(-1,-1),'Helvetica-Bold'),
+                            ('FONTNAME',(0,0),(-1,0),'Helvetica-Bold'),
                             ('FONTSIZE',(0,0),(-1,-1),8),
                             ('BOTTOMPADDING',(0,0),(-1,0),0),
                             ('BACKGROUND',(0,1),(-1,-1),colors.beige),
