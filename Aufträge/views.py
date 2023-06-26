@@ -199,6 +199,10 @@ def invoice(request,pk):
       style1 = styles1["Normal"]
       style1.fontSize = 10
       style1.alignment = 1
+      styles3 = getSampleStyleSheet()
+      style3 = styles1["Normal"]
+      style3.fontSize = 8
+      style3.alignment = 1
       #Creating data for table
       for i in range(len(pos.values('id'))):
         v = Adressen.objects.get(id = pos.values('von')[i]['von'])
