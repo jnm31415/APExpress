@@ -10,7 +10,7 @@ from .models import Rechnung
 from .models import Help
 
 
-
+'''
 class MyAdminSite(admin.AdminSite):
     def get_urls(self):
         urlpatterns = super().get_urls()
@@ -39,7 +39,7 @@ admin.site.register(Rechnungsempfänger)
 admin.site.register(Fahrer)
 admin.site.register(Help)
 admin.site.register(Rechnung)
-'''
+
 
 
 
