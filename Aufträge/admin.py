@@ -20,7 +20,7 @@ class MyAdminSite(admin.AdminSite):
         return urlpatterns
 
 # Register your models here.
-admin.site.register(Auftragspositionen)
+MyAdminSite.register(Auftragspositionen)
 admin.site.register(Auftrag)
 admin.site.register(Adressen)
 admin.site.register(Rechnungsempfänger)
