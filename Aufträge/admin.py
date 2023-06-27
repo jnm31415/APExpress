@@ -23,6 +23,6 @@ class MyAdminSite(admin.AdminSite):
             urlpatterns += [
                 path('%s/' % (model._meta.model_name), include(model_admin.urls)),
             ]
-    return urlpatterns
+        return urlpatterns
 
 
