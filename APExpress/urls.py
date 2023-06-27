@@ -7,8 +7,8 @@ from Aufträge.admin import admin_view
 
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
-    path('admin/', admin_view.urls),
+    path('admin/', admin.site.urls),
+    #path('admin/', admin_view.urls),
     path('', include('Aufträge.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
