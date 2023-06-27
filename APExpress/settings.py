@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Aufträge',
     'django_filters'
-    'Aufträge.apps.MyAdminConfig',
+    'Aufträge.apps',
 ]
 #
 
