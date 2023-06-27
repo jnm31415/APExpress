@@ -1,5 +1,5 @@
 from django.apps import AppConfig
-from django.contrib.admin import apps
+from django.contrib.admin.apps import AdminConfig
 
 class AufträgeConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
@@ -7,7 +7,7 @@ class AufträgeConfig(AppConfig):
     verbose_name = 'Auftraege'
 
 
-'''
-class MyAdminConfig(apps.AdminConfig):
+
+class MyAdminConfig(AdminConfig):
     default_site = 'Aufträge.admin.MyAdminSite'
-'''
+
