@@ -6,4 +6,4 @@ class AufträgeConfig(AppConfig):
     name = 'Aufträge'
 
 class MyAdminConfig(AdminConfig):
-    default_site = 'myproject.admin.MyAdminSite'
+    default_site = 'Aufträge.admin.MyAdminSite'
