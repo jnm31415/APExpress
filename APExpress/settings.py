@@ -36,7 +36,7 @@ DATABASE_URL = "postgres://default:J7Efao6cQrUC@ep-patient-butterfly-717518.eu-c
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin'
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
