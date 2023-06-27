@@ -16,4 +16,13 @@ admin.site.register(Fahrer)
 admin.site.register(Help)
 admin.site.register(Rechnung)
 
+class MyAdminSite(admin.AdminSite):
+    def get_urls(self):
+        urlpatterns = super().get_urls()
+        for model, model_admin in self._registry.items():
+            urlpatterns += [
+                path('%s/' % (model._meta.model_name), include(model_admin.urls)),
+            ]
+      return urlpatterns
+
 
