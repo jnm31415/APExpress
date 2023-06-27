@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path,include
+from django.contrib.auth.models import Group,User
 from .models import Auftrag
 from .models import Auftragspositionen
 from .models import Rechnungsempfänger
@@ -27,6 +28,8 @@ admin_view.register(Adressen)
 admin_view.register(Fahrer)
 admin_view.register(Rechnung)
 admin_view.register(Help)
+admin_view.register(Group)
+admin_view.register(User)
 
 '''
 admin.site.register(Auftragspositionen)
