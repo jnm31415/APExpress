@@ -7,14 +7,7 @@ from .models import Fahrer
 from .models import Rechnung
 from .models import Help
 
-# Register your models here.
-MyAdminSite.site.register(Auftragspositionen)
-MyAdminSite.site.register(Auftrag)
-MyAdminSite.site.register(Adressen)
-MyAdminSite.site.register(Rechnungsempfänger)
-MyAdminSite.site.register(Fahrer)
-MyAdminSite.site.register(Help)
-MyAdminSite.site.register(Rechnung)
+
 
 class MyAdminSite(admin.AdminSite):
     def get_urls(self):
@@ -24,6 +17,15 @@ class MyAdminSite(admin.AdminSite):
                 path('%s/' % (model._meta.model_name), include(model_admin.urls)),
             ]
         return urlpatterns
+
+# Register your models here.
+MyAdminSite.site.register(Auftragspositionen)
+MyAdminSite.site.register(Auftrag)
+MyAdminSite.site.register(Adressen)
+MyAdminSite.site.register(Rechnungsempfänger)
+MyAdminSite.site.register(Fahrer)
+MyAdminSite.site.register(Help)
+MyAdminSite.site.register(Rechnung)
 
 
 
