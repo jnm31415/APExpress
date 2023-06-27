@@ -1,5 +1,5 @@
 from django.apps import AppConfig
-from django.contrib.admin.apps import AdminConfig
+from django.contrib.admin import AdminConfig
 
 class AufträgeConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
