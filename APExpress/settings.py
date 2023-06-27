@@ -36,7 +36,7 @@ DATABASE_URL = "postgres://default:J7Efao6cQrUC@ep-patient-butterfly-717518.eu-c
 # Application definition
 
 INSTALLED_APPS = [
-    'Aufträge.apps.MyAdminConfig',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -44,8 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Aufträge',
     'django_filters'
+    'Aufträge.apps.MyAdminConfig',
 ]
-#'django.contrib.admin',
+#
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
