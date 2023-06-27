@@ -15,7 +15,7 @@ class MyAdminSite(admin.AdminSite):
         urlpatterns = super().get_urls()
         for model, model_admin in self._registry.items():
             urlpatterns += [
-                path('%s/' % (model._meta.model_name), include(model_admin.urls)),
+                path('%s/' % 'Aufträge/'+(model._meta.model_name), include(model_admin.urls)),
             ]
         return urlpatterns
 
