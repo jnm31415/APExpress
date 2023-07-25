@@ -149,3 +149,4 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build','static')
 MEDIA_URL = '/images/'
+FILTERS_DEFAULT_LOOKUP_EXPR = 'icontains'
